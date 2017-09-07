@@ -1,0 +1,26 @@
+<section class="newsletter-full ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="discount">
+          <img src="{{ themePath }}img/kitty.png" alt="kitty" >
+          <div class="offer">15% OFF <br><span>em <strong>qualquer</strong> produto</span><h2 class="newsletter-title">
+              <span>Assinando nossa newsletter</span>
+          </h2></div>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="newsletter" data-tray-tst="newsletter_box">
+
+            <form action="{{ links.newsletter }}" method="post" name="newsletter" data-tray-tst="newsletter_form">
+                <input name="name" type="text" placeholder="{{ Translation('digitar_nome') }}" required>
+                <input name="email" type="email" placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
+                <button data-tray-tst="newsletter_cadastrar">{{ Translation('cadastrar') }}</button>
+            </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

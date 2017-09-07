@@ -1,0 +1,21 @@
+<div class="customer">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">
+        <img src="{{ themePath }}img/user.png" alt="texto alternativo" >
+      </button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><span class="tray-hide" data-logged-user="true">
+            <a href="{{ links.logout }}">{{ Translation('sair') }}</a>
+        </span></li>
+        <li><span class="tray-hide" data-logged-user="false">
+            <a href="{{ links.login }}" class="{{ utils.is_https ? 'modal-login' }}">{{ Translation('login') }}</a>
+        </span></li>
+        <li><a href="{{ links.orders }}" data-tray-tst="meus_pedidos">{{ Translation('meus_pedidos') }}</a></li>
+        <li><a href="{{ links.central }}" data-tray-tst="meu_cadastro">{{ Translation('acessar_conta') }}</a></li>
+      </ul>
+    </div>
+</div>

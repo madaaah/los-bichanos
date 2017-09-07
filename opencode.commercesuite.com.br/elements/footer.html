@@ -1,0 +1,109 @@
+{% set checkout = "checkout" in pages.current ? "true" : "false" %}
+<footer>
+
+    <div class="foo-content">
+        <div class="container">
+            <div class="col-sm-6 col-md-3 col-xs-12">
+              <h1 class="site-logo" alt="{{ store.name }}">
+                  <a href="{{ links.home }}" data-tray-tst="logotipo_loja">{{ Image('logo') }}</a>
+              </h1>
+
+            </div>
+
+            <!--{%
+                if
+                Translation('ag_atendimento') != '' or
+                Translation('ag_telefone_1') != '' or
+                Translation('ag_telefone_2') != '' or
+                Translation('ag_email_1') != '' or
+                Translation('ag_email_2') != ''
+            %}-->
+            <div class="col-sm-6 col-md-3 col-xs-12 foo-contact">
+              <h3>{{ Translation('institucional') }}</h3>
+              <ul class="links-list">
+                  <li>
+                      <a href="/empresa">Sobre nós</a>
+                  </li>
+                  <li>
+                      <a href="/seguranca">Segurança</a>
+                  </li>
+                  <li>
+                      <a href="{{ links.contact }}" data-tray-tst="fale_conosco">Contato</a>
+                  </li>
+              </ul>
+
+            </div>
+            {% endif %}
+
+            <!--{% if settings.facebook or
+                  settings.twitter or
+                  settings.whatsapp or
+                  settings.pinterest or
+                  settings.youtube or
+                  settings.instagram
+            %}-->
+            <div class="col-sm-6 col-md-3 col-xs-12">
+
+              <h3>Ajuda</h3>
+              <ul class="links-list">
+                <li><a href="/como-comprar">Como comprar</a></li>
+                <li><a href="/envio">Envio</a></li>
+                <li><a href="/pagamento">Pagamento</a></li>
+                <li><a href="/garantia">Garantia</a></li>
+              </ul>
+                  <!--<h3 class="social-title">{{ Translation('redes_sociais') }}</h3>
+                {% element 'snippets/social-list' %}
+            </div>
+            {% endif %}-->
+          </div>
+
+            <div class="col-sm-6 col-md-3 col-xs-12 payment-gateways">
+                <h3>{{ Translation('pagamento') }}</h3>
+                {% element 'snippets/payment-list' %}
+
+                {% if seals.ebit or seals.hackersafe %}
+                    <h3 class="security-title">{{ Translation('seguranca') }}</h3>
+                    <ul class="foo-seals">
+                        {% if seals.ebit %}
+                        <li class="seal-ebit pull-left">{{ seals.ebit }}</li>
+                        {% endif %}
+                        {% if seals.hackersafe %}
+                        <li>{{ seals.hackersafe }}</li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<section class="atendimento">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Atendimento: <span>Segunda à Sexta - <strong>09:00</strong> às <strong>18:00</strong> | Sábado - <strong>09:00</strong> às <strong>13:00</strong></h2>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ themePath }}img/envelope-lined-white.png" alt="email"> sac@losbichanos.com.br
+      </div>
+      <div class="col-md-3 contacts">
+        <img src="{{ themePath }}img/phone-lined-whote.png" alt="email">
+        <div>
+          011 <strong>2403-4355</strong><br>
+          011 <strong>978-898-888</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if Translation('ag_mensagem_rodape') != '' %}
+<div class="foo-message">
+    <div class="container">
+        <span class="message-footer">
+            {{ Translation('ag_mensagem_rodape') }}
+        </span>
+    </div>
+</div>
+{% endif %}

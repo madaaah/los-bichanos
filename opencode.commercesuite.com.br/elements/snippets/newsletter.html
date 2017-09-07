@@ -1,0 +1,10 @@
+<section class="newsletter" data-tray-tst="newsletter_box">
+    <h2 class="newsletter-title">
+        <span>{{ Translation('news') }}</span>
+    </h2>
+    <form action="{{ links.newsletter }}" method="post" name="newsletter" data-tray-tst="newsletter_form">
+        <input name="name" type="text" placeholder="{{ Translation('digitar_nome') }}" required>
+        <input name="email" type="email" placeholder="{{ Translation('digitar_email') }}" data-tray-tst="newsletter_email" required>
+        <button data-tray-tst="newsletter_cadastrar">{{ Translation('cadastrar') }}</button>
+    </form>
+</section>

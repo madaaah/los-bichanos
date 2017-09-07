@@ -1,0 +1,160 @@
+/**
+ * Typography
+ */
+
+a,
+a:hover {
+    color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+    font-weight: 400;
+}
+
+.icons {
+  text-align: left;
+  margin: 40px 0;
+  img {
+    display: inline-block;
+    padding-right: 15px;
+  }
+  .text {
+    display: inline-block;
+    padding-top: 10px;
+  }
+
+  span {
+    font-size: 13px;
+    color: #000000;
+    font-weight: normal;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+  }
+
+  strong {
+    color: #ab1f24;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+  }
+}
+
+
+.btn-buy {
+	border: none;
+	font-family: inherit;
+	font-size: 13px;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 50px;
+	display: block;
+  width: 90%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-buy:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-buy:before {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-buy:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e116";
+}
+
+.btn-3 {
+	background: #ab1f24;
+	color: #fff;
+}
+
+.btn-3:hover {
+	background: darken(#ab1f24, 5%);
+  color: #FFFFFF;
+}
+
+.btn-3:active {
+  background: darken(#ab1f24, 5%);
+  color: #FFFFFF;
+	top: 2px;
+}
+
+.btn-3:before {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	line-height: 3;
+	font-size: 15px;
+	width: 40px;
+}
+
+/* Button 3d */
+.btn-3d {
+	padding: 15px 30px 15px 60px;
+	border-radius: 10px;
+}
+
+.btn-3d:before {
+	background: darken(#ab1f24, 10%);
+	color: #FFF;
+	z-index: 2;
+	border-radius: 10px 0 0 10px;
+}
+
+.btn-3d:after {
+	width: 15px;
+	height: 15px;
+  background: #80171b;
+  z-index: 1;
+  left: 38px;
+  top: 50%;
+  margin: -7px 0 0 -7px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.btn-3d:active:before {
+	color: #FFFFFF;
+}
+
+.btn-3d:active {
+	top: 0;
+}
+
+.btn-3d:active:after {
+	left: 40px;
+}

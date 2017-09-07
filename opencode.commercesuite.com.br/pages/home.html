@@ -1,0 +1,95 @@
+<section class="icons">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      <img src="{{ themePath }}img/safe.png" alt="texto alternativo" >
+      <div class="text">
+        <span>Compra</span>
+        <strong>Segura</strong>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <img src="{{ themePath }}img/quality.png" alt="texto alternativo" >
+      <div class="text">
+        <span>Produtos de</span>
+        <strong>Qualidade</strong>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <img src="{{ themePath }}img/discount.png" alt="texto alternativo" >
+      <div class="text">
+        <span>Compras acima de R$200</span>
+        <strong>Frete Grátis</strong>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <img src="{{ themePath }}img/deliver.png" alt="texto alternativo" >
+      <div class="text">
+        <span>Entregamos para</span>
+        <strong>Todo o Brasil</strong>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="small-banners">
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      {% if banners.extra1 %}
+        {{ banner.extra1 }}
+      {% endif %}
+    </div>
+    <div class="col-md-4 col-sm-4">
+      {% if banners.extra2 %}
+        {{ banner.extra2 }}
+      {% endif %}
+    </div>
+    <div class="col-md-4 col-sm-4">
+      {% if banners.extra3 %}
+        {{ banner.extra3 }}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if settings.limitProducts %}
+    {% set limitProducts = settings.limitProducts %}
+{% else %}
+    {% set limitProducts = 4 %}
+{% endif %}
+
+
+
+{% set products = Products({
+    'filter': 'promotion',
+    'limit': limitProducts,
+}) %}
+{% element 'showcase' {
+    "products": products,
+    "showcaseTitle": "Em promoção"
+} %}
+
+{% set products2 = Products({
+    'filter': 'new',
+    'limit': limitProducts,
+    'order':  {'id': 'desc'},
+}) %}
+
+{% element 'showcase' {
+    "products": products2,
+    "showcaseTitle": "Novidades"
+} %}
+
+{% set products3 = Products({
+    'filter': 'featured',
+    'limit': limitProducts,
+    'order':  {'quantity_sold': 'desc'},
+}) %}
+
+{% element 'showcase' {
+    "products": products3,
+    "showcaseTitle": "Destaques"
+} %}
+
+
+{% if pages.current == 'home' %}
+	{{ banner.popup ~ banner.floating }}
+{% endif %}

@@ -1,0 +1,11 @@
+<div class="search">
+    <form role="form" action="{{ links.search }}" method="get" data-search="suggestion">
+        <input type="hidden" name="loja" value="{{ store.id }}">
+        <button class="search-button pull-left" type="submit" tabindex="2" data-tray-tst="botao_buscar">
+          <img src="{{ themePath }}img/search.png" alt="buscar">
+        </button>
+        <div>
+            <input class="search-key" type="text" data-input="suggestion" placeholder="Procurando algo especial?" name="palavra_busca" tabindex="1" data-tray-tst="busca_palavra" required>
+        </div>
+    </form>
+</div>

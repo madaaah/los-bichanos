@@ -1,0 +1,72 @@
+<header>
+  <div class="row visible-xs-block">
+    <div class="col-sm-12">
+      <ul class="nav nav-pills user-nav-mobile">
+        <li><span class="tray-hide" data-logged-user="true">
+            <a href="{{ links.logout }}">{{ Translation('sair') }}</a>
+        </span></li>
+        <li><span class="tray-hide" data-logged-user="false">
+            <a href="{{ links.login }}" class="{{ utils.is_https ? 'modal-login' }}">{{ Translation('login') }}</a>
+        </span></li>
+        <li><a href="{{ links.orders }}" data-tray-tst="meus_pedidos">{{ Translation('meus_pedidos') }}</a></li>
+        <li><a href="{{ links.central }}" data-tray-tst="meu_cadastro">{{ Translation('acessar_conta') }}</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row hidden-xs">
+            <div class="col-sm-12 col-md-3 col-xs-12">
+              <div class="welcome">
+                <span class="tray-hide" data-logged-user="true">
+                    {{ Translation('bem_vindo_central') }} <span data-customer="name"></span>,
+                    <a href="{{ links.logout }}">{{ Translation('sair') }}</a></li>
+                </span>
+                <span class="tray-hide" data-logged-user="false">
+                    {{ Translation('bem_vindo_central') }}, <a href="{{ links.login }}" data-tray-tst="login" class="{{ utils.is_https ? 'modal-login' }}">{{ Translation('login') }}</a> {{ Translation('ou') }} <a href="{{ links.register }}" data-tray-tst="cadastro">{{ Translation('cadastre_se') }}</a>
+                </span>
+              </div>
+              {% element 'snippets/search' %}
+            </div>
+            <div class="col-sm-12 col-md-6 col-xs-12">
+                {% if pages.current == 'home' %}
+                    <h1 class="site-logo" alt="{{ store.name }}">
+                        <a href="{{ links.home }}" data-tray-tst="logotipo_loja">{{ Image('logo') }}</a>
+                    </h1>
+                {% else %}
+                    <a href="{{ links.home }}" class="site-logo" data-tray-tst="logotipo_loja">{{ Image('logo') }}</a>
+                {% endif %}
+              </div>
+              <div class="col-sm-12 col-md-3 col-xs-12">
+                  {% element 'snippets/customer' %}
+                  {% element 'snippets/cart' %}
+              </div>
+
+
+            </div>
+
+            <div class="row hidden-md hidden-lg visible-xs-block ">
+                <div class="col-sm-8 col-xs-8">
+                    {% element 'snippets/search' %}
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                    {% element 'snippets/cart' %}
+                </div>
+              </div>
+              <div class="row hidden-md hidden-lg visible-xs-block ">
+                <div class="col-sm-12 col-md-12 col-xs-12">
+                    {% if pages.current == 'home' %}
+                        <h1 class="site-logo" alt="{{ store.name }}">
+                            <a href="{{ links.home }}" data-tray-tst="logotipo_loja">{{ Image('logo') }}</a>
+                        </h1>
+                    {% else %}
+                        <a href="{{ links.home }}" class="site-logo" data-tray-tst="logotipo_loja">{{ Image('logo') }}</a>
+                    {% endif %}
+                  </div>
+
+
+                </div>
+
+        </div>
+    </div>
+</header>
+{% element 'snippets/menu' %}

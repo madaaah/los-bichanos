@@ -1,0 +1,144 @@
+/**
+ * Header
+ */
+
+header {
+  background: #FFFFFF;
+  padding: 30px 20px;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.user-nav-mobile {
+  width: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  li {
+    background: #eeeeee;
+    border-radius: 5px;
+    span {
+      display: block;
+    }
+    span, a {
+      color: #636363;
+      padding: 10px 15px;
+    }
+  }
+}
+
+.wrapper-nav{
+    background: #ffffff;
+    clear: both;
+    margin: 15px 0 30px;
+
+    > div:first-child{
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.site-logo {
+    height: 120px;
+    display: block;
+    font-size: 0;
+    text-align: center;
+
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 120px;
+        margin-right: -1%;
+        vertical-align: middle;
+        width: 1%;
+    }
+
+    img{
+        display: inline-block;
+        max-height: 100px;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+
+.welcome {
+  font-size: 12px;
+  a {
+    color: #ab1f24;
+    text-decoration: underline;
+  }
+}
+
+/*Navbar*/
+.main-menu.navbar-default {
+  position: inherit;
+}
+
+.navbar-default {
+    background-color: #ab1f24;
+    border-color: #ab1f24;
+    border-radius: 0;
+    margin-bottom: 0;
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+      background-color: darken(#ab1f24, 20%);
+      border-color: #ab1f24;
+    }
+
+    .navbar-collapse.in .navbar-nav .open .dropdown-menu>li>a {
+       padding-left: 60px;
+       &:hover {
+         background: darken(#ab1f24, 10%);
+       }
+     }
+
+    .navbar-toggle {
+      &:hover, &:focus {
+        background: #000000;
+      }
+       .icon-bar {
+         background-color: #FFFFFF;
+       }
+     }
+    a {
+      color: #FFF;
+    }
+    .navbar-collapse.in {
+      ul {
+        li {
+          display: block;
+          width: 100%;
+          text-align: left;
+          a {
+            display: block;
+            line-height: 30px!important;
+            color: #FFFFFF!important;
+          }
+        }
+      }
+    }
+}
+
+.owl-item img {
+    width: 100%;
+}
+
+.main-menu {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+
+a.link-level1 {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 15px 20px;
+    line-height: 50px;
+}

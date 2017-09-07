@@ -1,0 +1,48 @@
+/**
+ * Search
+ */
+
+.search{
+
+    @media screen and (max-width: $sm){
+        padding: 10px 0;
+    }
+
+    form{
+        background: #fff;
+        height: 55px;
+        position: relative;
+
+        > div{
+            overflow: hidden;
+        }
+    }
+
+    .search-button{
+        background-color: #FFFFFF!important;
+        border: none;
+        border-right: none;
+        height: 55px;
+        padding: 0 11px;
+    }
+
+    .search-key{
+        background: none;
+        border: 0!important;
+        border-right: none;
+        font-size: 1.3rem;
+        font-style: italic;
+        height: 55px;
+        padding: 19px 10px;
+        width: 100%;
+
+        @media screen and (max-width: $sm){
+            border: 0;
+            border-right: none;
+            font-size: 13px;
+            height: 55px;
+            padding: 17px 25px 17px 10px;
+            width: 80%;
+        }
+    }
+}
