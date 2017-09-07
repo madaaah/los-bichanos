@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  dev-los-bichanos:
+    image: node:8
+    volumes:
+     - ./:/var/www/app/
+     - "${HOME}/.cache/yarn:/root/.cache/yarn"
+    working_dir: /var/www/app/
+    ports:
+     - "3001:3001"
+    command: bash -c "npm install -g gulp && npm install && gulp --folder los-bichanos"
