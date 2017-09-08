@@ -110,13 +110,12 @@ gulp.task('bsync', () => {
     bSync.init({
         logPrefix: 'Tray Opencode',
         logFileChanges: false,
-        open: 'external',
         proxy: {
             target: URL
         },
         reloadDelay: 800,
         port: 8081,
-        https: true,
+        https: false,
         files: FOLDER + '**/**',
     });
 });
@@ -154,6 +153,6 @@ gulp.task('default', [
     'sass',
     'less',
     'stylus',
-    'js',
+    'js'
     // 'imagemin',
  ]);

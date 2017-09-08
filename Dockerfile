@@ -1,4 +1,2 @@
-FROM node:6
-RUN mkdir -p /opt/chimp
-WORKDIR /var/www/los-bichanos
-RUN npm install --verbose
+FROM starefossen/ruby-node:latest
+RUN npm install -g gulp

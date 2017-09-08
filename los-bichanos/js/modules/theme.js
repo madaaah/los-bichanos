@@ -56,7 +56,7 @@
     });
 
 })(jQuery);
-
+/*
 // menu mobile
 (function(){
     var btnMenu = document.getElementsByClassName('trigger-menu')[0];
@@ -77,4 +77,4 @@
             this.className = this.className.replace(new RegExp('(^|\\b)' + 'menu-open'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
         }
     });
-})();
+})();*/

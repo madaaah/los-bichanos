@@ -11,7 +11,7 @@
         {% element 'snippets/breadcrumb' { "class": 'breadcrumb'} %}
         
         <div class="col-md-6 product-colum-left">
-            
+             
             {% if product.images %}
                 <div id="visualBlock" class="product-gallery {{ product.images|length  <= 1 and not product.video ? 'hide-carousel' }}">
                     {{ productHelper.gallery() }}
@@ -22,15 +22,25 @@
                 </div>
             {% endif %}
             
-			{% if settings.social_position == 0 %}
-				<div class="product-social sidepicture">
-					{{ productHelper.social() }}
-				</div>
-			{% endif %} 
-            
+			
+            <br>
             <div class="product-labels">
-                {{ productHelper.labels() }}
-            </div>
+                 {% if product.featured %}
+                 <span style="background:#0092cf;">Destaque!</span>
+                 {% endif %}
+                 {% if product.free_shipping %}
+                 <span style="background:#68b12e;">Frete Grátis!</span>
+                 {% endif %}
+                 {% if product.new %}
+                 <span style="background:#fe5403;">Lançamento!</span>
+                 {% endif %}
+              </div>
+
+              {% if settings.social_position == 0 %}
+                <div class="product-social sidepicture">
+                    {{ productHelper.social() }}
+                </div>
+            {% endif %} 
             
         </div>
         
@@ -40,13 +50,15 @@
             <h1 class="product-name" itemprop="name">{{ product.name }}</h1>
             {% element 'product/rating' %}
 
-            <p class="product-details">
+
+            <div class="product-details">
+            {{ product.description }}
                 {% if settings.show_product_stock %}
                     <span>Estoque: <b>{{ product.stock }}</b></span>
                 {% endif %}
                 {{ productHelper.details() }}
                 {{ productHelper.icons() }}
-            </p>
+            </div>
             {{ productHelper.bonus() }}
             <form id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
                 {{ productHelper.pricing() }}

@@ -1,0 +1,108 @@
+/*
+Error: Undefined variable: "$sm".
+        on line 21 of css/sass/page-noticia.scss
+
+16:         
+17:         img{
+18:             &[style*="float: left"] {
+19:                 margin-right: 15px;
+20:                 
+21:                 @media screen and (max-width: $sm){
+22:                     display: block;
+23:                     float: none !important;
+24:                     height: auto !important;
+25:                     margin: 15px auto;
+26:                 }
+
+Backtrace:
+css/sass/page-noticia.scss:21
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:553:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/bundle/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/usr/local/bundle/bin/sass:23:in `load'
+/usr/local/bundle/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$sm\".\A         on line 21 of css/sass/page-noticia.scss\A \A 16:         \A 17:         img{\A 18:             &[style*=\"float: left\"] {\A 19:                 margin-right: 15px;\A 20:                 \A 21:                 @media screen and (max-width: $sm){\A 22:                     display: block;\A 23:                     float: none !important;\A 24:                     height: auto !important;\A 25:                     margin: 15px auto;\A 26:                 }"; }

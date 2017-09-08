@@ -1,0 +1,97 @@
+/*
+Error: Undefined mixin 'typo'.
+        on line 16 of css/sass/page-comparador.scss, in `typo'
+        from line 16 of css/sass/page-comparador.scss
+
+11:         
+12:         h1{
+13:             color: #000;
+14:             margin-bottom: 30px;
+15:             text-transform: uppercase;
+16:             @include typo(2.5rem, 400, $font, 2.5rem);
+17:         }
+18:     }
+19:     
+20:     .comparatorTabs{
+21:         font-size: 0;
+
+Backtrace:
+css/sass/page-comparador.scss:16:in `typo'
+css/sass/page-comparador.scss:16
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:98:in `block in with_mixin'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:98:in `with_mixin'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/bundle/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/bundle/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/usr/local/bundle/bin/sass:23:in `load'
+/usr/local/bundle/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'typo'.\A         on line 16 of css/sass/page-comparador.scss, in `typo'\A         from line 16 of css/sass/page-comparador.scss\A \A 11:         \A 12:         h1{\A 13:             color: #000;\A 14:             margin-bottom: 30px;\A 15:             text-transform: uppercase;\A 16:             @include typo(2.5rem, 400, $font, 2.5rem);\A 17:         }\A 18:     }\A 19:     \A 20:     .comparatorTabs{\A 21:         font-size: 0;"; }

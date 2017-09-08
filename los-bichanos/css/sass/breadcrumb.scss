@@ -5,23 +5,28 @@
 }
 
 .breadcrumb{
-    margin-bottom: 30px;
+    margin: 20px 0 40px;
     padding: 0 15px;
+    background-color: #FFFFFF;
+
     
     a, 
     .icon-breadcrumb{
-        color: #9c9c9c;
-        @include typo(1.2rem, 400, $font, 1.2rem);
+        color: #000000;
+        font-size:12px;
+        font-weight: normal;
     }
 }
 
 .breadcrumb-item{
-    @include typo(1.2rem, 400, $font, 1.2rem);
-    
+    font-size:12px;
+    font-weight: normal;
     &:last-child{
         
         a{
-            color: #c2a26f;    
+            color: #ab1f24!important;
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
 }
@@ -29,7 +34,8 @@
 .icon-breadcrumb{
     
     &:before{
-        content: '/';
+        color: #ab1f24;
+        content: ' > ';
         padding: 0 3px;
     }
 }
